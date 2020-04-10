@@ -1,22 +1,22 @@
-import React, { useEffect, useState } from "react"
-import { Link } from "gatsby"
-import { HeaderWrapper } from "../../styles/layout/HeaderStyles"
+import React, { useEffect, useState } from 'react';
+import { Link } from 'gatsby';
+import { HeaderWrapper } from '../../styles/layout/HeaderStyles';
 
 const Header = () => {
-  let [isScrolled, setIsScrolled] = useState(false)
+  let [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    window.addEventListener('scroll', () => {
       if (
         document.body.scrollTop > 30 ||
         document.documentElement.scrollTop > 30
       ) {
-        setIsScrolled((isScrolled = true))
+        setIsScrolled((isScrolled = true));
       } else {
-        setIsScrolled((isScrolled = false))
+        setIsScrolled((isScrolled = false));
       }
-    })
-  }, [])
+    });
+  }, []);
 
   return (
     <HeaderWrapper isScrolled={isScrolled}>
@@ -32,11 +32,6 @@ const Header = () => {
             <li>
               <Link activeClassName="activePage" to="/blog">
                 Blog
-              </Link>
-            </li>
-            <li>
-              <Link activeClassName="activePage" to="/tutorials">
-                Tutorials
               </Link>
             </li>
             <li>
@@ -58,7 +53,7 @@ const Header = () => {
         </nav>
       </div>
     </HeaderWrapper>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

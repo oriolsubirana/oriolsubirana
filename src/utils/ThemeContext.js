@@ -1,16 +1,16 @@
-import React from "react"
-import { lightTheme } from "../styles/layout/__themes"
+import React from 'react';
+import { lightTheme } from '../styles/layout/__themes';
 
 const ThemeContext = React.createContext({
   lightTheme,
-  transition: "0.5s",
+  transition: '0.5s',
   toggleTheme: () => {},
-})
+});
 
 // ? provider component wraps entire app in gatsby-browser.js
 class ThemeContextWrapper extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     // TODO set initial theme based on time of day
     // ? bug in header background color on scroll when code isn't commented
@@ -28,14 +28,14 @@ class ThemeContextWrapper extends React.Component {
     this.toggleTheme = () => {
       this.setState({
         currentTheme: lightTheme,
-      })
-    }
+      });
+    };
 
     this.state = {
       currentTheme: lightTheme,
-      transition: "0.5s",
+      transition: '0.5s',
       toggleTheme: this.toggleTheme,
-    }
+    };
   }
 
   render() {
@@ -43,9 +43,9 @@ class ThemeContextWrapper extends React.Component {
       <ThemeContext.Provider value={this.state}>
         {this.props.children}
       </ThemeContext.Provider>
-    )
+    );
   }
 }
 
-export default ThemeContextWrapper
-export { ThemeContext }
+export default ThemeContextWrapper;
+export { ThemeContext };

@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 const LayoutWrapper = styled.div`
   margin: 0;
@@ -59,6 +59,6 @@ const LayoutWrapper = styled.div`
     align-items: center;
     max-width: 880px;
   }
-`
+`;
 
-export { LayoutWrapper }
+export { LayoutWrapper };
