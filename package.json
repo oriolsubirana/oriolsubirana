@@ -1,9 +1,23 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "oriolsubirana",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "I'm Software Engineer Developer and I love learning all related with software and technologies.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "license": "MIT",
+  "author": {
+    "name": "Oriol Subirana Perdiguer",
+    "email": "subi.cat@gmail.com",
+    "url": "https://oriolsubirana.com/"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "jest --watchAll"
+  },
   "dependencies": {
     "gatsby": "^2.20.12",
     "gatsby-image": "^2.3.1",
@@ -24,21 +38,11 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/oriolsubirana/oriolsubirana/"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/oriolsubirana/oriolsubirana/issues"
   }
 }
