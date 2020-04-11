@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Layout from '../templates/layout';
 import PropTypes from 'prop-types';
+import Layout from '../templates/layout';
 import { IndexPageWrapper } from '../styles/index/IndexStyles';
 
 import Twitter from '../images/svg/TwitterSVG.js';
@@ -42,26 +42,6 @@ const Index = ({ data }) => {
             <li>
               <a
                 target="_blank"
-                href={twitterURL}
-                rel="noopener"
-                aria-label="My twitter profile"
-              >
-                <Twitter />
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                href={instagramURL}
-                rel="noopener"
-                aria-label="My Instagram page"
-              >
-                <Instagram />
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
                 href={linkedinURL}
                 rel="noopener"
                 aria-label="My linkedin profile"
@@ -77,6 +57,26 @@ const Index = ({ data }) => {
                 aria-label="My Github page"
               >
                 <Github />
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href={twitterURL}
+                rel="noopener"
+                aria-label="My twitter profile"
+              >
+                <Twitter />
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href={instagramURL}
+                rel="noopener"
+                aria-label="My Instagram page"
+              >
+                <Instagram />
               </a>
             </li>
           </ul>

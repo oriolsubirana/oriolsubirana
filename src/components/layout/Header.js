@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'gatsby';
 import { HeaderWrapper } from '../../styles/layout/HeaderStyles';
+import LogoSVG from '../../images/svg/LogoSVG';
 
 const Header = () => {
   let [isScrolled, setIsScrolled] = useState(false);
@@ -23,10 +24,9 @@ const Header = () => {
       <div className="navContainer">
         <div id="logo">
           <Link to="/" aria-label="to home page">
-            <h2>ORIOL SUBIRANA</h2>
+            {/* <LogoSVG /> */}
           </Link>
         </div>
-
         <nav>
           <ul>
             <li>
