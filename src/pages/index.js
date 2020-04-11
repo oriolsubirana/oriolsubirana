@@ -1,18 +1,34 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import PropTypes from 'prop-types';
 import Layout from '../templates/layout';
+import PropTypes from 'prop-types';
 import { IndexPageWrapper } from '../styles/index/IndexStyles';
-import BlogListing from '../components/index/BlogListing';
 
-import Twitter from '../images/svg/TwitterSVG';
+import Twitter from '../images/svg/TwitterSVG.js';
 import Instagram from '../images/svg/InstagramSVG';
 import Linkedin from '../images/svg/LinkedinSVG';
 import Github from '../images/svg/GithubSVG';
-import Arrow from '../images/svg/DownArrowSVG';
-import Resume from '../images/svg/ResumeSVG';
 
-const Index = () => {
+const Index = ({ data }) => {
+  const {
+    miniBio,
+    twitterURL,
+    instagramURL,
+    githubURL,
+    linkedinURL,
+  } = data.me.childMarkdownRemark.frontmatter;
+
+  const seo = {
+    page: 'index',
+    title: '',
+    description: `${miniBio}`,
+    url: 'https://oriolsubirana.com',
+    imgUrl: ``,
+    imgAlt:
+      'osubirana logo, twitter, instagram, github icons with @oriolsubirana username',
+    breadcrumbs: [],
+  };
+
   return (
     <Layout>
       <IndexPageWrapper>
@@ -26,7 +42,7 @@ const Index = () => {
             <li>
               <a
                 target="_blank"
-                href="https://twitter.com/subicat"
+                href={twitterURL}
                 rel="noopener"
                 aria-label="My twitter profile"
               >
@@ -36,7 +52,7 @@ const Index = () => {
             <li>
               <a
                 target="_blank"
-                href="https://www.instagram.com/uri.subi/"
+                href={instagramURL}
                 rel="noopener"
                 aria-label="My Instagram page"
               >
@@ -46,7 +62,7 @@ const Index = () => {
             <li>
               <a
                 target="_blank"
-                href="https://www.linkedin.com/in/oriol-subirana-06241b35/"
+                href={linkedinURL}
                 rel="noopener"
                 aria-label="My linkedin profile"
               >
@@ -56,43 +72,14 @@ const Index = () => {
             <li>
               <a
                 target="_blank"
-                href="https://github.com/oriolsubirana"
+                href={githubURL}
                 rel="noopener"
                 aria-label="My Github page"
               >
                 <Github />
               </a>
             </li>
-            <li>
-              <a
-                target="_blank"
-                href={data.resume.publicURL}
-                rel="noopener"
-                aria-label="My Resume"
-              >
-                <Resume />
-              </a>
-            </li>
           </ul>
-        </div>
-
-        <div className="downArrowLink">
-          <a
-            href="#recentPublications"
-            aria-label="scroll down to recent publications section"
-            style={{ height: '50px', width: '50px' }}
-          >
-            <Arrow />
-          </a>
-        </div>
-
-        {/* Blog posts */}
-        <div id="recentPublications">
-          <h1>All Recent Publications</h1>
-
-          {data.allMarkdownRemark.edges.map(({ node }) => (
-            <BlogListing key={node.id} data={node} />
-          ))}
         </div>
       </IndexPageWrapper>
     </Layout>
@@ -100,7 +87,6 @@ const Index = () => {
 };
 
 Index.propTypes = {
-  path: PropTypes.string.isRequired,
   data: PropTypes.object.isRequired,
 };
 
@@ -108,27 +94,6 @@ export default Index;
 
 export const INDEX_PAGE_QUERY = graphql`
   query INDEX_PAGE_QUERY {
-    # all blog posts, sorted by most recent
-    allMarkdownRemark(
-      sort: { fields: frontmatter___date, order: DESC }
-      filter: { frontmatter: { type: { in: ["blogPost", "tutorial"] } } }
-    ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            date
-            title
-            slug
-            subtitle
-            tags
-            type
-          }
-          excerpt(pruneLength: 300)
-          timeToRead
-        }
-      }
-    }
     # social links from about markdown file
     me: file(relativePath: { eq: "me.md" }) {
       childMarkdownRemark {
@@ -142,17 +107,9 @@ export const INDEX_PAGE_QUERY = graphql`
           twitterURL
           instagramURL
           githubURL
-          facebookURL
-          snapchat
           linkedinURL
         }
       }
-    }
-    pageImg: file(relativePath: { eq: "page-meta-img.jpg" }) {
-      publicURL # used for SEO
-    }
-    resume: file(relativePath: { eq: "content/JDCastro_Resume_Nov2019.pdf" }) {
-      publicURL
     }
   }
 `;
