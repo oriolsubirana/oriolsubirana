@@ -42,6 +42,16 @@ const Index = ({ data }) => {
             <li>
               <a
                 target="_blank"
+                href={data.resume.publicURL}
+                rel="noopener"
+                aria-label="My Resume"
+              >
+                <Resume />
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
                 href={githubURL}
                 rel="noopener"
                 aria-label="My Github page"
@@ -67,16 +77,6 @@ const Index = ({ data }) => {
                 aria-label="My Instagram page"
               >
                 <Instagram />
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                href={data.resume.publicURL}
-                rel="noopener"
-                aria-label="My Resume"
-              >
-                <Resume />
               </a>
             </li>
           </ul>
