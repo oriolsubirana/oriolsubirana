@@ -6,9 +6,6 @@ module.exports = {
     siteUrl: 'https://oriolsubirana.com',
   },
 
-  pathPrefix: '/blog',
-  pathPrefix: '/technologies',
-
   plugins: [
     {
       resolve: 'gatsby-plugin-manifest',
@@ -47,7 +44,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: 'UA-130258530-1',
+        trackingId: '',
         head: false,
         anonymize: true,
         respectDNT: true,

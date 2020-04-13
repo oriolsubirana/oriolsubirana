@@ -25,28 +25,29 @@ const Header = () => {
         <div id="logo">
           <Link to="/" aria-label="to home page">
             {/* <LogoSVG /> */}
+            <h2>ORIOL SUBIRANA</h2>
           </Link>
         </div>
         <nav>
           <ul>
             <li>
               <Link activeClassName="activePage" to="/blog">
-                Blog
+                blog
               </Link>
             </li>
             <li>
               <Link activeClassName="activePage" to="/technologies">
-                Technologies
+                technologies
               </Link>
             </li>
             <li>
               <Link activeClassName="activePage" to="/about">
-                About Me
+                about me
               </Link>
             </li>
             <li>
               <Link activeClassName="activePage" to="/contact">
-                Contact
+                contact
               </Link>
             </li>
           </ul>

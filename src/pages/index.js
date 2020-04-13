@@ -8,35 +8,25 @@ import Twitter from '../images/svg/TwitterSVG.js';
 import Instagram from '../images/svg/InstagramSVG';
 import Linkedin from '../images/svg/LinkedinSVG';
 import Github from '../images/svg/GithubSVG';
+import Resume from '../images/svg/ResumeSVG';
 
 const Index = ({ data }) => {
   const {
-    miniBio,
     twitterURL,
     instagramURL,
     githubURL,
     linkedinURL,
   } = data.me.childMarkdownRemark.frontmatter;
 
-  const seo = {
-    page: 'index',
-    title: '',
-    description: `${miniBio}`,
-    url: 'https://oriolsubirana.com',
-    imgUrl: ``,
-    imgAlt:
-      'osubirana logo, twitter, instagram, github icons with @oriolsubirana username',
-    breadcrumbs: [],
-  };
+  console.log('data', data);
 
   return (
     <Layout>
       <IndexPageWrapper>
         <div className="indexIntro">
           <h1 className="headline">
-            I'm Oriol Subirana,
-            <br />a Software Engineer
-            <br /> developer.
+            Hello! I'm Oriol Subirana
+            <br /> a fullstack Java specialist.
           </h1>
           <ul className="introSocialLinks">
             <li>
@@ -79,6 +69,16 @@ const Index = ({ data }) => {
                 <Instagram />
               </a>
             </li>
+            <li>
+              <a
+                target="_blank"
+                href={data.resume.publicURL}
+                rel="noopener"
+                aria-label="My Resume"
+              >
+                <Resume />
+              </a>
+            </li>
           </ul>
         </div>
       </IndexPageWrapper>
@@ -110,6 +110,10 @@ export const INDEX_PAGE_QUERY = graphql`
           linkedinURL
         }
       }
+    }
+
+    resume: file(relativePath: { eq: "content/ORIOL_SUBIRANA_APR2020.pdf" }) {
+      publicURL
     }
   }
 `;
