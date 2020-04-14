@@ -39,9 +39,8 @@ const HeaderWrapper = styled.header`
       }
       h2 {
         color: ${props => props.theme.textColor};
-        font-size: 0.563rem;
+        font-size: 1.2rem;
         text-align: center;
-        letter-spacing: 4.4px;
         margin: 0;
       }
     }
@@ -97,8 +96,7 @@ const HeaderWrapper = styled.header`
           width: 100%;
         }
         h2 {
-          font-size: 0.69rem;
-          letter-spacing: 5.8px;
+          font-size: 1.2rem;
         }
       }
     }

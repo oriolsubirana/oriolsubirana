@@ -18,14 +18,12 @@ const Index = ({ data }) => {
     linkedinURL,
   } = data.me.childMarkdownRemark.frontmatter;
 
-  console.log('data', data);
-
   return (
     <Layout>
       <IndexPageWrapper>
         <div className="indexIntro">
           <h1 className="headline">
-            Hello! I'm Oriol Subirana
+            Hello! I'm Oriol
             <br /> a fullstack Java specialist.
           </h1>
           <ul className="introSocialLinks">

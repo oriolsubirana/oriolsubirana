@@ -24,8 +24,7 @@ const Header = () => {
       <div className="navContainer">
         <div id="logo">
           <Link to="/" aria-label="to home page">
-            {/* <LogoSVG /> */}
-            <h2>ORIOL SUBIRANA</h2>
+            <h2>{`< Home />`}</h2>
           </Link>
         </div>
         <nav>
