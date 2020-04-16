@@ -8,13 +8,14 @@ const FooterWrapper = styled.footer`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #f9f9f9f9;
 
   .stackIcons {
-    padding: 25px 15px 15px;
+    padding: 15px 25px 0px;
     width: 100%;
     max-width: 400px;
     a {
-        text-decoration: none;
+      text-decoration: none;
     }
     ul {
       margin: 0;
@@ -37,8 +38,10 @@ const FooterWrapper = styled.footer`
   }
 
   .copyright {
-    color: ${props => props.theme.textColor}
-    padding-top: 5px;
+    margin-bottom: 10px;
+    small {
+      color: ${props => props.theme.textColor};
+    }
   }
 `;
 

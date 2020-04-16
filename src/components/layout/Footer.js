@@ -94,7 +94,10 @@ const Footer = () => {
         </ul>
       </div>
       <div className="copyright">
-        <small>&copy; {new Date().getFullYear()} - Oriol Subirana</small>
+        <small>
+          Copyright &copy; Oriol Subirana Perdiguer · {new Date().getFullYear()}{' '}
+          All rights reserved.
+        </small>
       </div>
     </FooterWrapper>
   );
