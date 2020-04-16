@@ -5,8 +5,9 @@ import PropTypes from 'prop-types';
 
 import { LayoutWrapper } from '../styles/layout/LayoutStyles';
 import Header from '../components/layout/Header';
+import Footer from '../components/layout/Footer';
 
-const Layout = ({ children }) => {
+const Layout = ({ children, path }) => {
   const theme = useContext(ThemeContext);
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -22,6 +23,7 @@ const Layout = ({ children }) => {
         </div>
         <main>{children}</main>
       </LayoutWrapper>
+      <Footer path={path} />
     </ThemeProvider>
   );
 };

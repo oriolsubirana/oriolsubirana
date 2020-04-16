@@ -9,6 +9,7 @@ import Instagram from '../images/svg/InstagramSVG';
 import Linkedin from '../images/svg/LinkedinSVG';
 import Github from '../images/svg/GithubSVG';
 import Resume from '../images/svg/ResumeSVG';
+import Arrow from '../images/svg/DownArrowSVG';
 
 const Index = ({ data }) => {
   const {
@@ -23,7 +24,7 @@ const Index = ({ data }) => {
       <IndexPageWrapper>
         <div className="indexIntro">
           <h1 className="headline">
-            Hello! I'm Oriol
+            Hello! I'm Oriol Subirana
             <br /> a fullstack Java specialist.
           </h1>
           <ul className="introSocialLinks">

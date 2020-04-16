@@ -24,7 +24,7 @@ const Header = () => {
       <div className="navContainer">
         <div id="logo">
           <Link to="/" aria-label="to home page">
-            <h2>{`< Home />`}</h2>
+            <h2>{`< OriolSubirana />`}</h2>
           </Link>
         </div>
         <nav>
