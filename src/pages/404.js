@@ -22,15 +22,6 @@ const NotFoundWrapper = styled.div`
 `;
 
 const NotFound = () => {
-  const seo = {
-    page: `404`,
-    title: 'Page Not Found',
-    description: `Big oops, much sorry. You've hit a route that doesn't exist!`,
-    url: `https://oriolsubirana.com`,
-    imgUrl: ``,
-    breadcrumbs: [],
-  };
-
   return (
     <Layout>
       <NotFoundWrapper>
