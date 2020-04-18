@@ -14,6 +14,12 @@ const IndexPageWrapper = styled.div`
       color: ${props => props.theme.textColor};
       letter-spacing: 0.5px;
     }
+    .helloline {
+      animation: ${fadeInUpward} 1s;
+      letter-spacing: 0.5px;
+      color: #5d5b5b;
+      font-size: 4.5rem;
+    }
     .introSocialLinks {
       display: flex;
       flex-direction: row;
@@ -43,38 +49,11 @@ const IndexPageWrapper = styled.div`
       }
     }
   }
-  .downArrowLink {
-    width: 80%;
-    margin: -14vh auto 0;
-    text-align: center;
-    align-self: flex-end;
-    transition: ${props => props.theme.transition};
-    a {
-      height: 50px;
-      width: 50px;
-      svg {
-        height: 50px;
-        width: auto;
-        margin: 0 0;
-        background-color: ${props => props.theme.bgColor};
-        transition: ${props => props.theme.transition};
-        .icon {
-          background-color: ${props => props.theme.bgColor};
-          transition: ${props => props.theme.transition};
-          fill: ${props => props.theme.textColor};
-        }
-      }
-    }
-  }
-  #recentPublications {
-    padding-top: 72px;
-    margin-top: -40px;
-    h1 {
-      margin: 30px 0 0;
-    }
-  }
   @media (min-width: 550px) {
-    .indexIntro {
+    .helloline {
+      font-size: 3rem;
+    }
+    .headline {
       h1 {
         font-size: 2.6rem;
       }
@@ -82,11 +61,13 @@ const IndexPageWrapper = styled.div`
   }
   @media (min-width: 880px) {
     .indexIntro {
-      /* margin-left: -10vw; */
       position: relative;
       left: 0px;
       max-width: 1000px;
-      h1 {
+      .helloline {
+        font-size: 4.5rem;
+      }
+      .headline {
         font-size: 3rem;
       }
       .introSocialLinks {

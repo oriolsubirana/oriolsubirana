@@ -39,7 +39,7 @@ const HeaderWrapper = styled.header`
       }
       h2 {
         color: ${props => props.theme.textColor};
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-align: center;
         margin: 0;
       }
