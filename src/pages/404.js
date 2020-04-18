@@ -26,13 +26,9 @@ const NotFound = () => {
     <Layout>
       <NotFoundWrapper>
         <div>
-          <h1>
-            Big oops,
-            <br />
-            much sorry.
-          </h1>
-          <h3>You've hit a route that doesn't exist!</h3>
-          <Link to="/">Go back to Home page</Link>
+          <h1>Page not found.</h1>
+          <h4>The page you are looking for has been removed or relocated.</h4>
+          <Link to="/">Go back</Link>
         </div>
       </NotFoundWrapper>
     </Layout>
