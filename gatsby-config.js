@@ -96,17 +96,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        configFile: path.join(
-          __dirname,
-          'src',
-          'utils',
-          'robots-txt.config.js'
-        ),
-      },
-    },
-    {
       resolve: `gatsby-plugin-typescript`,
       options: {
         isTSX: true,
