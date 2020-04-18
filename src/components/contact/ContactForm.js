@@ -8,6 +8,7 @@ const ContactForm = () => {
       method="POST"
       data-netlify="true"
       action="/form-success"
+      data-netlify-recaptcha="true"
     >
       <input type="hidden" name="form-name" value="ContactForm" />
       <div>
@@ -28,6 +29,7 @@ const ContactForm = () => {
         </label>
         <textarea id="message" name="message" type="text" required />
       </div>
+      <div data-netlify-recaptcha="true"></div>
       <button type="submit">Send message</button>
     </form>
   );
