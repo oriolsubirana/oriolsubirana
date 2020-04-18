@@ -4,13 +4,12 @@ const ContactForm = () => {
   return (
     <form
       id="contact"
-      name="contact"
-      method="post"
+      name="ContactForm"
+      method="POST"
       data-netlify="true"
-      netlify-honeypot="bot-field"
       action="/form-success"
     >
-      <input type="hidden" name="bot-field" />
+      <input type="hidden" name="form-name" value="ContactForm" />
       <div>
         <label htmlFor="name">
           Name <span>*</span>
@@ -29,7 +28,7 @@ const ContactForm = () => {
         </label>
         <textarea id="message" name="message" type="text" required />
       </div>
-      <button type="submit">Submit</button>
+      <button type="submit">Send message</button>
     </form>
   );
 };

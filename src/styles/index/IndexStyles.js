@@ -18,7 +18,7 @@ const IndexPageWrapper = styled.div`
       animation: ${fadeInUpward} 1s;
       letter-spacing: 0.5px;
       color: #5d5b5b;
-      font-size: 4.5rem;
+      font-size: 3.5rem;
     }
     .introSocialLinks {
       display: flex;
@@ -54,9 +54,7 @@ const IndexPageWrapper = styled.div`
       font-size: 3rem;
     }
     .headline {
-      h1 {
-        font-size: 2.6rem;
-      }
+      font-size: 2.6rem;
     }
   }
   @media (min-width: 880px) {
@@ -65,7 +63,7 @@ const IndexPageWrapper = styled.div`
       left: 0px;
       max-width: 1000px;
       .helloline {
-        font-size: 4.5rem;
+        font-size: 3.5rem;
       }
       .headline {
         font-size: 3rem;
