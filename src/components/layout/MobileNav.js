@@ -26,7 +26,7 @@ const MobileNav = ({ mobileNavIsOpen, action }) => {
               </li>
               <li>
                 <Link activeClassName="activePage" to="/about">
-                  about Me
+                  about me
                 </Link>
               </li>
               <li>

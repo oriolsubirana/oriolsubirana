@@ -8,10 +8,11 @@ const FormSuccess = ({ path }) => {
   return (
     <Layout path={path}>
       <ContactWrapper>
-        <h1>Contact</h1>
-        <h2>Form successfully sent!</h2>
-        <h3>I'll get back to you as soon as possible!</h3>
-        <Link to="/">Go back to home page</Link>
+        <div className="formsuccess">
+          <h1>Thank you!</h1>
+          <h3>I'll answer you as soon as possible.</h3>
+          <Link to="/">Go back to home page</Link>
+        </div>
       </ContactWrapper>
     </Layout>
   );
