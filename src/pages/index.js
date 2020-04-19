@@ -9,6 +9,7 @@ import Instagram from '../images/svg/InstagramSVG';
 import Linkedin from '../images/svg/LinkedinSVG';
 import Github from '../images/svg/GithubSVG';
 import Resume from '../images/svg/ResumeSVG';
+import Hand from '../images/svg/HandSVG';
 
 const Index = ({ data }) => {
   const {
@@ -22,8 +23,9 @@ const Index = ({ data }) => {
     <Layout>
       <IndexPageWrapper>
         <div className="indexIntro">
-          <div>
+          <div className="hellohead">
             <h1 className="helloline">Hey there!</h1>
+            <Hand />
           </div>
           <h1 className="headline">
             I'm Oriol, a fullstack

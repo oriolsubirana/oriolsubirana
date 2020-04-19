@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'gatsby';
 import { HeaderWrapper } from '../../styles/layout/HeaderStyles';
-import LogoSVG from '../../images/svg/LogoSVG';
+import '../../styles/layout/hamburgers.css';
 
 const Header = () => {
   let [isScrolled, setIsScrolled] = useState(false);

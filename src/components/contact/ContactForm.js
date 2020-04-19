@@ -4,12 +4,13 @@ const ContactForm = () => {
   return (
     <form
       id="contact"
-      name="ContactForm"
+      name="contact"
       method="POST"
+      netlify-honeypot="bot-field"
       data-netlify="true"
       action="/form-success"
-      data-netlify-recaptcha="true"
     >
+      <input type="hidden" name="form-name" value="contact" />
       <input type="hidden" name="form-name" value="ContactForm" />
       <div>
         <label htmlFor="name">
@@ -29,7 +30,6 @@ const ContactForm = () => {
         </label>
         <textarea id="message" name="message" type="text" required />
       </div>
-      <div data-netlify-recaptcha="true"></div>
       <button type="submit">Send message</button>
     </form>
   );
