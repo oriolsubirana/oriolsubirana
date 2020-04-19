@@ -5,13 +5,11 @@ const ContactForm = () => {
     <form
       id="contact"
       name="contact"
-      method="POST"
-      netlify-honeypot="bot-field"
+      method="post"
       data-netlify="true"
       action="/form-success"
     >
-      <input type="hidden" name="form-name" value="contact" />
-      <input type="hidden" name="form-name" value="ContactForm" />
+      <input type="hidden" name="bot-field" />
       <div>
         <label htmlFor="name">
           Name <span>*</span>
