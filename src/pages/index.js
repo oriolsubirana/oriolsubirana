@@ -116,7 +116,11 @@ export const INDEX_PAGE_QUERY = graphql`
       }
     }
 
-    resume: file(relativePath: { eq: "content/ORIOL_SUBIRANA_PERDIGUER_APR2020.pdf" }) {
+    resume: file(
+      relativePath: {
+        eq: "content/Oriol_Subirana_Perdiguer_-_Senior_Software_Engineer.pdf"
+      }
+    ) {
       publicURL
     }
   }
