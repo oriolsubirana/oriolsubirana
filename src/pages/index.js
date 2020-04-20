@@ -116,7 +116,7 @@ export const INDEX_PAGE_QUERY = graphql`
       }
     }
 
-    resume: file(relativePath: { eq: "content/ORIOL_SUBIRANA_APR2020.pdf" }) {
+    resume: file(relativePath: { eq: "content/ORIOL_SUBIRANA_PERDIGUER_APR2020.pdf" }) {
       publicURL
     }
   }

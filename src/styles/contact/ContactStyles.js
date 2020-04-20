@@ -16,7 +16,6 @@ const ContactWrapper = styled.div`
     font-size: 2.7rem;
   }
   a {
-    text-decoration: none;
     color: #551a8b;
   }
 

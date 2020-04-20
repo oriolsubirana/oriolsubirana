@@ -10,7 +10,7 @@ const Contact = ({ path }) => {
       <ContactWrapper>
         <h1>Contact</h1>
         <p>
-          Please don't hesistate to contact me via{' '}
+          Please don't hesitate to contact me via{' '}
           <a href="mailto: subi.cat@gmail.com">email</a> or any of my social
           media accounts.
         </p>
