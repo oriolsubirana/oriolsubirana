@@ -23,6 +23,7 @@ const HeaderWrapper = styled.header`
     height: 70px;
     padding: 15px;
     width: 100vw;
+    max-width: 1000px;
     margin: 0 auto;
     #logo {
       width: 165px;

@@ -51,10 +51,10 @@ const LayoutWrapper = styled.div`
     transition: ${props => props.theme.transition};
     background-color: ${props => props.theme.bgColor};
     width: 100%;
-    padding: 12px 0px 24px;
+    padding: 0px 0px 0px;
     margin: 2px auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     max-width: 880px;
