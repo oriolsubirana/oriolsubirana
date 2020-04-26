@@ -21,10 +21,15 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-styled-components',
+      resolve: 'gatsby-plugin-material-ui',
       options: {
-        // Add any options here
+        stylesProvider: {
+          injectFirst: true,
+        },
       },
+    },
+    {
+      resolve: 'gatsby-plugin-styled-components',
     },
     {
       resolve: 'gatsby-source-filesystem',
@@ -96,7 +101,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-typescript`,
+      resolve: 'gatsby-plugin-typescript',
       options: {
         isTSX: true,
         allExtensions: true,

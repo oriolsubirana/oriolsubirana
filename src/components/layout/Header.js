@@ -24,7 +24,7 @@ const Header = () => {
       <div className="navContainer">
         <div id="logo">
           <Link to="/" aria-label="to home page">
-            <h2>{`< OriolSubirana />`}</h2>
+            <h2>{'< OriolSubirana />'}</h2>
           </Link>
         </div>
         <nav>
@@ -35,8 +35,8 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link activeClassName="activePage" to="/technologies">
-                technologies
+              <Link activeClassName="activePage" to="/stack">
+                tech stack
               </Link>
             </li>
             <li>

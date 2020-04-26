@@ -20,8 +20,8 @@ const MobileNav = ({ mobileNavIsOpen, action }) => {
                 </Link>
               </li>
               <li>
-                <Link activeClassName="activePage" to="/technologies">
-                  technologies
+                <Link activeClassName="activePage" to="/stack">
+                  tech stack
                 </Link>
               </li>
               <li>
