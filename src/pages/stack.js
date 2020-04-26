@@ -6,15 +6,22 @@ import StackPanel from '../components/stack/StackPanel';
 import Laptop from '../images/png/laptop.png';
 import ComputerDisk from '../images/png/computer-disk.png';
 import Gear from '../images/png/gear.png';
-import JavaSVG from '../images/tech-icons/JavaSVG.svg';
+import java from '../images/tech-icons/java.svg';
+import spring from '../images/tech-icons/spring.svg';
 
 const Stack = () => {
   const applications = [
     {
-      img: JavaSVG,
+      img: java,
       url: 'https://www.java.com/',
       title: 'Java 12',
       alt: 'java',
+    },
+    {
+      img: spring,
+      url: 'https://spring.io/',
+      title: 'Spring',
+      alt: 'spring',
     },
   ];
 

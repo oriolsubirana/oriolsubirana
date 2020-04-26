@@ -2,29 +2,39 @@ import styled from 'styled-components';
 
 const StackWrapper = styled.div`
   .stackIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     padding: 15px 25px 0px;
     width: 100%;
-    max-width: 400px;
+    .boxStack {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-sizing: content-box;
+      border: solid 1px rgba(60, 60, 60, 0.2);
+      border-radius: 5px;
+      width: 70px;
+      padding: 20px 20px 20px 20px;
+      margin: 0px 10px 0px 10px;
+      img {
+        margin-bottom: 10px;
+      }
+      h5 {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+      }
+      h6 {
+        font-size: 0.6rem;
+        font-style: italic;
+        font-weight: normal;
+        margin-bottom: 10px;
+      }
+    }
     a {
       text-decoration: none;
-    }
-    ul {
-      margin: 0;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      li {
-        list-style-type: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        a {
-          img {
-            height: auto;
-            width: 50px;
-          }
-        }
-      }
     }
   }
   margin-top: 80px;

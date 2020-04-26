@@ -17,12 +17,12 @@ const StackPanel = ({ title, icon, message }) => {
           <h4>{title}</h4>
         </div>
       </ExpansionPanelSummary>
-      <ExpansionPanelDetails className="stackIcons">
-        <ul>
+      <ExpansionPanelDetails>
+        <div className="stackIcons">
           {message.map((items, idx) => {
             const { img, url, title, alt } = items;
             return (
-              <li key={idx} className="panelMessage">
+              <div id={idx} className="boxStack">
                 <a href={url} target="_blank" rel="noopener" aria-label={title}>
                   {title === 'styled-components' ? (
                     <Img
@@ -34,11 +34,13 @@ const StackPanel = ({ title, icon, message }) => {
                   ) : (
                     <img src={img} title={title} alt={alt} />
                   )}
+                  <h5>{title}</h5>
+                  <h6>Expertise</h6>
                 </a>
-              </li>
+              </div>
             );
           })}
-        </ul>
+        </div>
       </ExpansionPanelDetails>
     </ExpansionPanel>
   );
