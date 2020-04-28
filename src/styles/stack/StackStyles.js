@@ -6,6 +6,7 @@ const StackWrapper = styled.div`
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
     padding: 15px 25px 0px;
     width: 100%;
     .boxStack {
@@ -16,21 +17,29 @@ const StackWrapper = styled.div`
       box-sizing: content-box;
       border: solid 1px rgba(60, 60, 60, 0.2);
       border-radius: 5px;
-      width: 70px;
+      width: 75px;
       padding: 20px 20px 20px 20px;
-      margin: 0px 10px 0px 10px;
+      margin: 0px 10px 10px 10px;
       img {
         margin-bottom: 10px;
+        width: 48px;
+        height: 48px;
       }
       h5 {
         font-size: 0.8rem;
         margin-bottom: 10px;
       }
       h6 {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
         font-style: italic;
         font-weight: normal;
         margin-bottom: 10px;
+      }
+      a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
     }
     a {

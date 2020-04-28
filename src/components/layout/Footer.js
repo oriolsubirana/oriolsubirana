@@ -8,6 +8,7 @@ import javascriptImg from '../../images/tech-icons/javascript.svg';
 import mdImg from '../../images/tech-icons/markdown.svg';
 import netlifyImg from '../../images/tech-icons/netlify.svg';
 import reactImg from '../../images/tech-icons/react.svg';
+import icons8 from '../../images/tech-icons/icons8.svg';
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -60,6 +61,12 @@ const Footer = () => {
       url: 'https://netlify.com/',
       title: 'Netlify',
       alt: 'netlify logo',
+    },
+    {
+      img: icons8,
+      url: 'https://iconos8.es/',
+      title: 'Icons8',
+      alt: 'icons8 logo',
     },
   ];
 

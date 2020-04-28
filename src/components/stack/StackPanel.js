@@ -20,9 +20,9 @@ const StackPanel = ({ title, icon, message }) => {
       <ExpansionPanelDetails>
         <div className="stackIcons">
           {message.map((items, idx) => {
-            const { img, url, title, alt } = items;
+            const { img, url, title, alt, level } = items;
             return (
-              <div id={idx} className="boxStack">
+              <div key={idx} id={idx} className="boxStack">
                 <a href={url} target="_blank" rel="noopener" aria-label={title}>
                   {title === 'styled-components' ? (
                     <Img
@@ -35,7 +35,7 @@ const StackPanel = ({ title, icon, message }) => {
                     <img src={img} title={title} alt={alt} />
                   )}
                   <h5>{title}</h5>
-                  <h6>Expertise</h6>
+                  <h6>{level}</h6>
                 </a>
               </div>
             );
