@@ -7,7 +7,7 @@ const StackWrapper = styled.div`
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    padding: 15px 25px 0px;
+    padding: 15px 15px 0px;
     width: 100%;
     .boxStack {
       display: flex;
