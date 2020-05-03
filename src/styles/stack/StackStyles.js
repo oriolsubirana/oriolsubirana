@@ -4,7 +4,7 @@ const StackWrapper = styled.div`
   .stackIcons {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 15px 15px 0px;

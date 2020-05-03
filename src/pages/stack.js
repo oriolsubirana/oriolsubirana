@@ -4,7 +4,6 @@ import Layout from '../templates/layout';
 import StackWrapper from '../styles/stack/StackStyles';
 import StackPanel from '../components/stack/StackPanel';
 import Laptop from '../images/png/laptop.png';
-import ComputerDisk from '../images/png/computer-disk.png';
 import Gear from '../images/png/gear.png';
 import java from '../images/tech-icons/java.svg';
 import spring from '../images/tech-icons/spring.svg';
@@ -21,6 +20,14 @@ import mongodb from '../images/tech-icons/mongodb.svg';
 import postgresql from '../images/tech-icons/postgresql.svg';
 import jest from '../images/tech-icons/jest.svg';
 import cucumber from '../images/tech-icons/cucumber.svg';
+import nifi from '../images/tech-icons/nifi.svg';
+import vscode from '../images/tech-icons/vscode.svg';
+import intellij from '../images/tech-icons/intellij.svg';
+import git from '../images/tech-icons/git.svg';
+import mvn from '../images/tech-icons/mvn.svg';
+import npm from '../images/tech-icons/npm.svg';
+import docker from '../images/tech-icons/docker.svg';
+import jenkins from '../images/tech-icons/jenkins.svg';
 
 const Stack = () => {
   const applications = [
@@ -131,9 +138,66 @@ const Stack = () => {
       alt: 'mongodb',
       level: 'Experienced',
     },
+    {
+      img: nifi,
+      url: 'https://nifi.apache.org/',
+      title: 'Nifi',
+      alt: 'nifi',
+      level: 'Experienced',
+    },
   ];
 
-  //const devOps = {};
+  const devOps = [
+    {
+      img: vscode,
+      url: 'https://code.visualstudio.com/',
+      title: 'VSCode',
+      alt: 'vscode',
+      level: 'Expert',
+    },
+    {
+      img: intellij,
+      url: 'https://www.jetbrains.com/es-es/idea/',
+      title: 'IntelliJ',
+      alt: 'intellij',
+      level: 'Expert',
+    },
+    {
+      img: git,
+      url: 'https://git-scm.com/',
+      title: 'Git',
+      alt: 'git',
+      level: 'Expert',
+    },
+    {
+      img: mvn,
+      url: 'http://maven.apache.org/',
+      title: 'Maven',
+      alt: 'mvn',
+      level: 'Expert',
+    },
+    {
+      img: npm,
+      url: 'https://www.npmjs.com/',
+      title: 'NPM',
+      alt: 'npm',
+      level: 'Expert',
+    },
+    {
+      img: docker,
+      url: 'https://www.docker.com/',
+      title: 'Docker',
+      alt: 'docker',
+      level: 'Expert',
+    },
+    {
+      img: jenkins,
+      url: 'https://www.jenkins.io/',
+      title: 'Jenkins',
+      alt: 'jenkins',
+      level: 'Expert',
+    },
+  ];
   return (
     <Layout>
       <StackWrapper>
@@ -143,7 +207,7 @@ const Stack = () => {
           icon={Laptop}
           message={applications}
         />
-        {/* <StackPanel title={'DevOps'} icon={Gear} message={devOps} /> */}
+        <StackPanel title={'DevOps'} icon={Gear} message={devOps} />
       </StackWrapper>
     </Layout>
   );
