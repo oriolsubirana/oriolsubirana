@@ -28,6 +28,11 @@ import mvn from '../images/tech-icons/mvn.svg';
 import npm from '../images/tech-icons/npm.svg';
 import docker from '../images/tech-icons/docker.svg';
 import jenkins from '../images/tech-icons/jenkins.svg';
+import slack from '../images/tech-icons/slack.svg';
+import jira from '../images/tech-icons/jira.svg';
+import confluence from '../images/tech-icons/confluence.svg';
+import docusaurus from '../images/tech-icons/docusaurus.svg';
+import scrum from '../images/tech-icons/scrum.svg';
 
 const Stack = () => {
   const applications = [
@@ -197,17 +202,52 @@ const Stack = () => {
       alt: 'jenkins',
       level: 'Expert',
     },
+    {
+      img: slack,
+      url: 'https://slack.com',
+      title: 'Slack',
+      alt: 'slack',
+      level: 'Experienced',
+    },
+    {
+      img: jira,
+      url: 'https://www.atlassian.com/es/software/jira',
+      title: 'Jira',
+      alt: 'jira',
+      level: 'Expert',
+    },
+    {
+      img: confluence,
+      url: 'https://www.atlassian.com/es/software/confluence',
+      title: 'Confluence',
+      alt: 'confluence',
+      level: 'Expert',
+    },
+    {
+      img: docusaurus,
+      url: 'https://docusaurus.io/',
+      title: 'Docusarus',
+      alt: 'docusaurus',
+      level: 'Experienced',
+    },
+    {
+      img: scrum,
+      url: 'https://www.scrum.org/',
+      title: 'Scrum',
+      alt: 'scrum',
+      level: 'Expert',
+    },
   ];
   return (
     <Layout>
       <StackWrapper>
-        <h1>Tech stack</h1>
+        <h1>Stack</h1>
         <StackPanel
           title={'Application & Data'}
           icon={Laptop}
           message={applications}
         />
-        <StackPanel title={'DevOps'} icon={Gear} message={devOps} />
+        <StackPanel title={'DevOps & Process'} icon={Gear} message={devOps} />
       </StackWrapper>
     </Layout>
   );
