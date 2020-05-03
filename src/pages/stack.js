@@ -33,6 +33,7 @@ import jira from '../images/tech-icons/jira.svg';
 import confluence from '../images/tech-icons/confluence.svg';
 import docusaurus from '../images/tech-icons/docusaurus.svg';
 import scrum from '../images/tech-icons/scrum.svg';
+import graphql from '../images/tech-icons/graphql.svg';
 
 const Stack = () => {
   const applications = [
@@ -142,6 +143,13 @@ const Stack = () => {
       title: 'MongoDB',
       alt: 'mongodb',
       level: 'Experienced',
+    },
+    {
+      img: graphql,
+      url: 'https://graphql.org/',
+      title: 'GraphQL',
+      alt: 'graphql',
+      level: 'Skillful',
     },
     {
       img: nifi,
