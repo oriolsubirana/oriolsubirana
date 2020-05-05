@@ -6,7 +6,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const StackPanel = ({ title, icon, message }) => {
   return (
-    <ExpansionPanel defaultExpanded className="expansionPanel">
+    <ExpansionPanel className="expansionPanel">
       <ExpansionPanelSummary
         expandIcon={<ExpandMoreIcon />}
         aria-controls="panel1a-content"

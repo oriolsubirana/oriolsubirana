@@ -30,11 +30,6 @@ const Header = () => {
         <nav>
           <ul>
             <li>
-              <Link activeClassName="activePage" to="/blog">
-                blog
-              </Link>
-            </li>
-            <li>
               <Link activeClassName="activePage" to="/stack">
                 stack
               </Link>
