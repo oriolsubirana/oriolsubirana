@@ -15,7 +15,7 @@ githubURL: "https://github.com/oriolsubirana"
 linkedinURL: "https://www.linkedin.com/in/oriol-subirana-06241b35/"
 ---
 
-# About Me
+# About me
 
 Hi, my name is Oriol Subirana. I'm a Senior software engineer from Barcelona with more than 6 years of experience as a professional developer. My mainly experience are in Java and Spring framework but I'm working also on frontend world with React and Angular. In addition, I'm also passionate about DevOps environment such as Automation, CI/CD, Containerization and Cloud.
 
