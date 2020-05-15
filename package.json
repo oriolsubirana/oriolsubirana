@@ -7,7 +7,7 @@
   "author": {
     "name": "Oriol Subirana Perdiguer",
     "email": "subi.cat@gmail.com",
-    "url": "https://oriolsubirana.com/"
+    "url": "https://www.oriolsubirana.dev/"
   },
   "scripts": {
     "build": "gatsby build",

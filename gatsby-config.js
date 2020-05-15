@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   siteMetadata: {
     title: 'Oriol Subirana',
-    siteUrl: 'https://oriolsubirana.com',
+    siteUrl: 'https://oriolsubirana.dev',
   },
 
   plugins: [
