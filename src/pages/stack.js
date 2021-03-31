@@ -63,13 +63,6 @@ const Stack = () => {
       level: 'Expert',
     },
     {
-      img: cucumber,
-      url: 'https://cucumber.io/',
-      title: 'Cucumber',
-      alt: 'cucumber',
-      level: 'Expert',
-    },
-    {
       img: junit,
       url: 'https://junit.org/junit5',
       title: 'JUnit',
@@ -81,6 +74,13 @@ const Stack = () => {
       url: 'https://groovy-lang.org/index.html',
       title: 'Groovy',
       alt: 'groovy',
+      level: 'Expert',
+    },
+    {
+      img: cucumber,
+      url: 'https://cucumber.io/',
+      title: 'Cucumber',
+      alt: 'cucumber',
       level: 'Expert',
     },
     {
