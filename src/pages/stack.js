@@ -37,6 +37,7 @@ import graphql from '../images/tech-icons/graphql.svg';
 import kotlin from '../images/tech-icons/kotlin.svg';
 import groovy from '../images/tech-icons/groovy.svg';
 import github from '../images/tech-icons/github.svg';
+import junit from '../images/tech-icons/junit.svg';
 
 const Stack = () => {
   const applications = [
@@ -66,6 +67,13 @@ const Stack = () => {
       url: 'https://cucumber.io/',
       title: 'Cucumber',
       alt: 'cucumber',
+      level: 'Expert',
+    },
+    {
+      img: junit,
+      url: 'https://junit.org/junit5',
+      title: 'JUnit',
+      alt: 'junit',
       level: 'Expert',
     },
     {
