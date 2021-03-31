@@ -34,6 +34,9 @@ import confluence from '../images/tech-icons/confluence.svg';
 import docusaurus from '../images/tech-icons/docusaurus.svg';
 import scrum from '../images/tech-icons/scrum.svg';
 import graphql from '../images/tech-icons/graphql.svg';
+import kotlin from '../images/tech-icons/kotlin.svg';
+import groovy from '../images/tech-icons/groovy.svg';
+import github from '../images/tech-icons/github.svg';
 
 const Stack = () => {
   const applications = [
@@ -45,11 +48,17 @@ const Stack = () => {
       level: 'Expert',
     },
     {
+      img: kotlin,
+      url: 'https://kotlinlang.org/',
+      title: 'Kotlin',
+      alt: 'kotlin',
+      level: 'Expert',
+    },
+    {
       img: spring,
       url: 'https://spring.io/',
       title: 'Spring',
       alt: 'spring',
-
       level: 'Expert',
     },
     {
@@ -57,7 +66,13 @@ const Stack = () => {
       url: 'https://cucumber.io/',
       title: 'Cucumber',
       alt: 'cucumber',
-
+      level: 'Expert',
+    },
+    {
+      img: groovy,
+      url: 'https://groovy-lang.org/index.html',
+      title: 'Groovy',
+      alt: 'groovy',
       level: 'Expert',
     },
     {
@@ -180,6 +195,13 @@ const Stack = () => {
       url: 'https://git-scm.com/',
       title: 'Git',
       alt: 'git',
+      level: 'Expert',
+    },
+    {
+      img: github,
+      url: 'https://github.com/',
+      title: 'GitHub',
+      alt: 'github',
       level: 'Expert',
     },
     {
