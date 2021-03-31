@@ -28,9 +28,9 @@ const Index = ({ data }) => {
             <Hand />
           </div>
           <h1 className="headline">
-            I'm Oriol, a fullstack
+            I'm Oriol, a Java and Kotlin
             <br />
-            Java specialist.
+            software engineer.
           </h1>
           <ul className="introSocialLinks">
             <li>
