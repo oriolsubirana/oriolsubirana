@@ -42,7 +42,7 @@
     "gatsby-theme-material-ui": "^1.0.8",
     "gatsby-transformer-remark": "^2.7.1",
     "gatsby-transformer-sharp": "^2.4.3",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "md5": "^2.2.1",
     "moment": "^2.24.0",
     "prismjs": "^1.23.0",
