@@ -38,6 +38,7 @@ import kotlin from '../images/tech-icons/kotlin.svg';
 import groovy from '../images/tech-icons/groovy.svg';
 import github from '../images/tech-icons/github.svg';
 import junit from '../images/tech-icons/junit.svg';
+import aws from '../images/tech-icons/amazon-web-services-logo.svg'
 
 const Stack = () => {
   const applications = [
@@ -210,6 +211,13 @@ const Stack = () => {
       url: 'https://github.com/',
       title: 'GitHub',
       alt: 'github',
+      level: 'Expert',
+    },
+    {
+      img: aws,
+      url: 'https://aws.amazon.com/?nc1=h_ls',
+      title: 'AWS',
+      alt: 'aws',
       level: 'Expert',
     },
     {
