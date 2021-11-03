@@ -21,6 +21,6 @@ Hi, my name is Oriol Subirana. I'm a Senior software engineer from Barcelona wit
 
 I always like to work on agile and ambitious projects surrounded by the greatest professionals to transform ideas into realities. As a good software freak, one of my goals is to achieve the highest quality in my code, so I'm always looking to improve my skills taking courses, reading books and attending to all kinds of software conferences.
 
-Beside programming my favourite hobbies are sports, cars and travelling (who don't like travelling???). I play basketball since I can remember and I also practice CrossFit, MTB and this year I've started with yoga. My two favourite car brands are Porsche and Mini, so I must not omit to say that I'm a proud owner of a red Mini Cooper.
+Beside programming my favourite hobbies are sports, cars and travelling (who don't like travelling???). I play basketball since I was a child and I also practice mountain bike and sometimes I try to surf some small waves. My two favourite car brands are Porsche and Mini, so one of my dreams is to own a classic Mini Cooper :).
 
 If you want to know more about me don't hesitate to contact me via email or any of my social media accounts I would be more than happy to talk with you.
