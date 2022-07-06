@@ -24,13 +24,10 @@ const Index = ({ data }) => {
       <IndexPageWrapper>
         <div className="indexIntro">
           <div className="hellohead">
-            <h1 className="helloline">Hey there!</h1>
-            <Hand />
+            <h1 className="helloline">Hey there, I'm Oriol</h1>
           </div>
           <h1 className="headline">
-            I'm Oriol, a fullstack
-            <br />
-            Java specialist.
+            A pragmatic Software Engineer.
           </h1>
           <ul className="introSocialLinks">
             <li>
