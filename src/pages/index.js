@@ -30,7 +30,7 @@ const Index = ({ data }) => {
           <h1 className="headline">
             I'm Oriol, a rookie
             <br />
-            Engineering Manager.
+            Engineering Director.
           </h1>
           <ul className="introSocialLinks">
             <li>
