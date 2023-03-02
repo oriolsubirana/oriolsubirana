@@ -19,6 +19,7 @@
     "test": "jest --watchAll"
   },
   "dependencies": {
+    "@lmdb/lmdb-win32-x64": "^2.7.9",
     "@material-ui/core": "^4.9.11",
     "@material-ui/icons": "^4.9.1",
     "@material-ui/styles": "^4.9.10",
@@ -30,7 +31,7 @@
     "gatsby-plugin-material-ui": "^2.1.8",
     "gatsby-plugin-offline": "^3.1.2",
     "gatsby-plugin-react-helmet": "^3.2.1",
-    "gatsby-plugin-robots-txt": "^1.5.0",
+    "gatsby-plugin-robots-txt": "^1.8.0",
     "gatsby-plugin-sharp": "^2.5.3",
     "gatsby-plugin-sitemap": "^2.3.1",
     "gatsby-plugin-styled-components": "^3.2.1",
@@ -44,7 +45,8 @@
     "gatsby-transformer-sharp": "^2.4.3",
     "lodash": "^4.17.21",
     "md5": "^2.2.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
+    "node-gyp-build-optional-packages": "^5.0.7",
     "prismjs": "^1.25.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
