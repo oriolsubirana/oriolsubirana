@@ -118,7 +118,7 @@ export const INDEX_PAGE_QUERY = graphql`
 
     resume: file(
       relativePath: {
-        eq: "content/Oriol_Subirana_Perdiguer_-_Engineering_Manager.pdf"
+        eq: "content/OriolSubirana-SWE.pdf"
       }
     ) {
       publicURL
