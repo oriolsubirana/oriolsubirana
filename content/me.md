@@ -1,9 +1,9 @@
 ---
-lastUpdated: "2020-04-11"
+lastUpdated: "2024-06-20"
 title: "Biography"
 name: "Oriol Subirana"
 email: "subi.cat@gmail.com"
-phone: "+34 630050189"
+phone: "+41 766898723"
 url: "https://oriolsubirana.dev"
 miniBio: "A Software Engineer developer. Works with technologies including Java + Spring, JavaScript, React, PostgreSQL, and MongoDB."
 portrait: ""
