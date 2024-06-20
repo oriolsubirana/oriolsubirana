@@ -28,9 +28,9 @@ const Index = ({ data }) => {
             <Hand />
           </div>
           <h1 className="headline">
-            I'm Oriol, a rookie
+            I'm Oriol, a Backend
             <br />
-            Engineering Director.
+            Software Engineer.
           </h1>
           <ul className="introSocialLinks">
             <li>
@@ -118,7 +118,7 @@ export const INDEX_PAGE_QUERY = graphql`
 
     resume: file(
       relativePath: {
-        eq: "content/Oriol_Subirana_Perdiguer_-_Engineering_Manager.pdf"
+        eq: "content/OriolSubirana-SWE.pdf"
       }
     ) {
       publicURL

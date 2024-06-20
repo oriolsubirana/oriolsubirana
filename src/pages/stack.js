@@ -27,6 +27,7 @@ import git from '../images/tech-icons/git.svg';
 import mvn from '../images/tech-icons/mvn.svg';
 import npm from '../images/tech-icons/npm.svg';
 import docker from '../images/tech-icons/docker.svg';
+import kubernetes from '../images/tech-icons/kubernetes.svg';
 import jenkins from '../images/tech-icons/jenkins.svg';
 import slack from '../images/tech-icons/slack.svg';
 import jira from '../images/tech-icons/jira.svg';
@@ -240,6 +241,13 @@ const Stack = () => {
       title: 'Docker',
       alt: 'docker',
       level: 'Expert',
+    },
+    {
+      img: kubernetes,
+      url: 'https://kubernetes.io/',
+      title: 'Kubernetes',
+      alt: 'Kubernetes',
+      level: 'Experienced',
     },
     {
       img: jenkins,
