@@ -47,18 +47,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: '',
-        head: false,
-        anonymize: true,
-        respectDNT: true,
-        exclude: [],
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
-      },
-    },
-    {
       resolve: 'gatsby-plugin-typography',
       options: {
         pathToConfigModule: path.join(__dirname, 'src', 'utils', 'typography'),
