@@ -17,12 +17,12 @@ linkedinURL: "https://www.linkedin.com/in/oriol-subirana-06241b35/"
 
 # About me
 
-Hi, my name is Oriol Subirana. I'm an Engineering Manager from Barcelona with more than 10 years of experience as a professional developer. My main experience is based in Java & Kotlin and Spring framework but I'm working also on frontend world with React and Angular. In addition, I'm also passionate about DevOps culture such as Automation, CI/CD, Containerization and Cloud.
+Hi, I’m Oriol Subirana, an Engineering Manager from Barcelona with over a decade of professional development experience. My expertise lies primarily in Java, Kotlin, and the Spring framework, though I also delve into the frontend world with React and Angular. Moreover, I'm passionate about DevOps culture, encompassing Automation, CI/CD, Containerisation, and Cloud.
 
-In the last years I have been facing my professional career in management and leadership. This allows me to help other engineers grow and lead teams in the development of new products, solutions and processes.
+In recent years, I have shifted my professional focus towards management and leadership. This transition has enabled me to mentor other engineers and lead teams in developing new products, solutions, and processes.
 
-I always like to work on agile and ambitious projects surrounded by the greatest professionals to transform ideas into realities. As a good software freak, one of my goals is to achieve the highest quality in my code, so I'm always looking to improve my skills taking courses, reading books and attending to all kinds of software conferences.
+I relish working on agile and ambitious projects, surrounded by top-tier professionals, to transform ideas into reality. As a dedicated software enthusiast, one of my goals is to achieve the highest quality in my code. Thus, I'm always seeking to enhance my skills through courses, books, and attending various software conferences.
 
-Beside programming my favourite hobbies are sports, cars and travelling (who don't like travelling???). I play basketball since I was a child and I also practice all kinds of bikes and sometimes I try to surf some small waves. Now I live in Switzerland, so skiing is part of my life. My two favourite car brands are Porsche and Mini, so one of my dreams is to own a classic Mini Cooper and Porsche 993 :).
+Outside of programming, my favourite hobbies include sports, cars, and travelling (who doesn’t love travelling?). I’ve played basketball since childhood and enjoy all kinds of biking; I even occasionally try my hand at surfing small waves. Now residing in Switzerland, skiing has become part of my life. My two favourite car brands are Porsche and Mini, and one of my dreams is to own a classic Mini Cooper and a Porsche 993.
 
-If you want to know more about me don't hesitate to contact me via email or any of my social media accounts I would be more than happy to talk with you.
+If you’d like to know more about me, don’t hesitate to contact me via email or any of my social media accounts. I’d be delighted to chat with you.
