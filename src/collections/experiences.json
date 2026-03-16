@@ -1,30 +1,58 @@
 [
 	{
-		"dates": "September 2023 · Present",
+		"dates": "April 2025 · Present",
+		"role": "Senior Software Engineer",
+		"company": "Natwest Group",
+		"description": "Led the design and development of a modular microservices-based API platform. Delivered scalable solutions on AWS using Docker and Kubernetes, integrating Kafka for streaming and applying DevOps best practices.",
+		"logo": "/assets/images/experiences/natwest.ico"
+	},
+	{
+		"dates": "September 2023 · February 2025",
 		"role": "Senior Software Engineer",
 		"company": "Beyond Beauty Club",
-		"description": "Responsible for MLM system and mobile application back-end development.",
+		"description": "Led a team to develop and deploy a multi-level marketing mobile application growing to +20,000 users and 5 countries in six months. Implemented robust data management strategies including database optimisation and caching.",
 		"logo": "/assets/images/experiences/bbc.ico"
 	},
 	{
 		"dates": "January 2023 · September 2023",
 		"role": "Head of Engineering",
 		"company": "WOW Concept",
-		"description": "Leaded the engineering team to design, develop, and deliver solutions aligned with company goals.",
+		"description": "Ensured compliance with software development methodology and SDLC. Managed software development projects and designed strategies for future development based on company objectives.",
 		"logo": "/assets/images/experiences/wow.ico"
 	},
 	{
 		"dates": "August 2020 · January 2023",
 		"role": "Engineering Manager",
 		"company": "SEAT:CODE",
-		"description": "Managed an engineering team’s work, ensuring projects were delivered effectively and aligned with company objectives.",
+		"description": "Coordinated the product roadmap between legacy and cloud-based products. Managed a team of 12 engineers responsible for mentorship, growth, and performance evaluation.",
 		"logo": "/assets/images/experiences/code.ico"
 	},
 	{
 		"dates": "May 2018 · August 2020",
 		"role": "Senior Software Engineer",
 		"company": "Roche Diagnostics",
-		"description": "Developed and maintained software solutions for medical devices and diagnostic tools, ensuring accuracy, compliance, and innovation in healthcare technology.",
+		"description": "Built solutions for Medical Diagnostics Software using Java, Spring Boot, Angular and React. Hexagonal Architecture with Domain-Driven Design structured in Microservices.",
 		"logo": "/assets/images/experiences/roche.ico"
+	},
+	{
+		"dates": "February 2016 · May 2018",
+		"role": "Senior Software Engineer",
+		"company": "Alemany Informatica",
+		"description": "Built technical solutions and completed projects to budgetary and quality requirements. Involved in requirements gathering, demonstrating software prototypes, and customer training.",
+		"logo": "/assets/images/experiences/alemany.ico"
+	},
+	{
+		"dates": "March 2015 · February 2016",
+		"role": "Software Engineer",
+		"company": "SII Concatel",
+		"description": "Developed web and Android applications using Javascript, JQuery, Spring Security, Spring MVC, and Hibernate inside the Scrum team.",
+		"logo": "/assets/images/experiences/sii.ico"
+	},
+	{
+		"dates": "February 2013 · March 2015",
+		"role": "System Analyst",
+		"company": "Accenture",
+		"description": "Worked with the financial risk team of Banc Sabadell. Developed with SQL Server, Oracle, C#, Java, Matlab and financial applications.",
+		"logo": "/assets/images/experiences/accenture.ico"
 	}
 ]
