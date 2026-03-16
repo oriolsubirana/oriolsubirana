@@ -3,13 +3,14 @@ import experiences from "../collections/experiences.json";
 import AboutExperience from "../components/about-experience.astro";
 import PageHeading from "../components/page-heading.astro";
 import Layout from "../layouts/main.astro";
+import Button from "../components/button.astro";
 ---
 
 <Layout title="About Me">
   <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0 pb-10">
     <PageHeading
       title="About Me"
-      description="Hello 👋 I'm Oriol Subirana, an Engineering Manager from Barcelona with over a decade of experience in designing and developing scalable technology solutions. My technical expertise centers around Java, Kotlin, and the Spring framework, with strong competencies in frontend development using React and Angular. I’m also deeply passionate about fostering a DevOps culture, with a focus on automation, CI/CD, containerization, and cloud technologies."
+      description="Detail-oriented Software Engineer with a strategic and pragmatic approach to driving project success and ensuring client satisfaction. With over 10 years of experience in designing and developing large-scale cloud-based technology solutions, I bring a strong technical foundation combined with proven leadership in delivering impactful results."
     />
 
     <img
@@ -34,12 +35,12 @@ import Layout from "../layouts/main.astro";
     >
       Experience
     </h2>
-    <div class="px-5 py-10">
+    <div class="px-5 py-10 max-h-[600px] overflow-y-auto">
       {
         experiences.map((experience, loop) => {
           return (
             <>
-              {loop == 0 || loop == 1 || loop == 2 ? (
+              {loop < experiences.length - 1 ? (
                 <div class="pb-10 border-l border-gray-200 dark:border-neutral-700">
                   <AboutExperience
                     dates={experience.dates}
@@ -63,7 +64,7 @@ import Layout from "../layouts/main.astro";
         })
       }
     </div>
-    <a href="/OriolSubiranaCV2025.pdf" class="text-indigo-600 underline">More in my resume</a>
+    <Button text="More in my resume" link="/OriolSubiranaCV2025.pdf" />
     <div>
       <h2
         class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
