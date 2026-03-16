@@ -3,7 +3,6 @@ import experiences from "../collections/experiences.json";
 import AboutExperience from "../components/about-experience.astro";
 import PageHeading from "../components/page-heading.astro";
 import Layout from "../layouts/main.astro";
-import Separator from "../components/home/separator.astro";
 ---
 
 <Layout title="About Me">
@@ -64,9 +63,7 @@ import Separator from "../components/home/separator.astro";
         })
       }
     </div>
-    <a href="/OriolSubiranaCV2025.pdf">
-      <Separator text="More in my resume" link="/OriolSubiranaCV2025.pdf" />
-    </a>
+    <a href="/OriolSubiranaCV2025.pdf" class="text-indigo-600 underline">More in my resume</a>
     <div>
       <h2
         class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
