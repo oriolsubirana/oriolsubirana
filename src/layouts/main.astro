@@ -1,8 +1,22 @@
 ---
+import { ViewTransitions } from "astro:transitions";
+import "../assets/css/main.css";
 import Footer from "../components/footer.astro";
 import Header from "../components/header.astro";
-import SquareLines from "../components/square-lines.astro";
-const { title } = Astro.props;
+
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const SITE_NAME = "Oriol Subirana";
+const DEFAULT_DESCRIPTION =
+	"Oriol Subirana is a software engineer lead in Zürich with 10+ years building cloud platforms in Java and Kotlin and leading engineering teams.";
+
+const { title, description = DEFAULT_DESCRIPTION } = Astro.props;
+const pageTitle = title === SITE_NAME ? title : `${title} · ${SITE_NAME}`;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const ogImage = new URL("/assets/images/cover.png", Astro.site).href;
 ---
 
 <!doctype html>
@@ -10,35 +24,64 @@ const { title } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{title}</title>
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content={SITE_NAME} />
+    <link rel="canonical" href={canonical} />
+    <meta name="theme-color" content="#FAFAF9" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0C0A09" media="(prefers-color-scheme: dark)" />
 
-    <!-- Used to add dark mode right away, adding here prevents any flicker -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@subicat" />
+    <meta name="twitter:image" content={ogImage} />
+
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Apply the theme before first paint to avoid a flash. Re-run after view transitions. -->
     <script is:inline>
-      if (typeof Storage !== "undefined") {
-        if (
-          localStorage.getItem("dark_mode") &&
-          localStorage.getItem("dark_mode") == "true"
-        ) {
-          document.documentElement.classList.add("dark");
+      (function () {
+        function applyTheme() {
+          var stored = null;
+          try {
+            stored = localStorage.getItem("theme");
+          } catch (e) {}
+          var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          var dark = stored ? stored === "dark" : prefersDark;
+          document.documentElement.classList.toggle("dark", dark);
         }
-      }
+        applyTheme();
+        document.addEventListener("astro:after-swap", applyTheme);
+      })();
     </script>
 
-    <style>
-      .prose img {
-        border-radius: 20px;
-      }
-    </style>
-    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png" />
-    <script src="../assets/css/main.css"></script>
+    <ViewTransitions />
     <Fragment set:html={import.meta.env.HEADER_INJECT} />
   </head>
-  <body
-    class="antialiased bg-white dark:bg-neutral-950 min-h-screen flex flex-col"
-  >
-    <SquareLines />
+  <body class="flex min-h-screen flex-col font-sans">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-stone-900 focus:px-4 focus:py-2 focus:text-sm focus:text-white dark:focus:bg-white dark:focus:text-stone-900"
+    >
+      Skip to content
+    </a>
     <Header />
-    <slot />
+    <main id="main" class="flex flex-1 flex-col">
+      <slot />
+    </main>
     <Footer />
     <script src="../assets/js/main.js"></script>
     <Fragment set:html={import.meta.env.FOOTER_INJECT} />

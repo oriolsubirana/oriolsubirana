@@ -1,0 +1,43 @@
+---
+interface Props {
+	name: "mail" | "linkedin" | "github" | "x" | "instagram";
+	class?: string;
+}
+
+const { name, class: className = "h-5 w-5" } = Astro.props;
+
+const strokePaths: Partial<Record<Props["name"], string>> = {
+	mail: "M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Zm0 0 9 6 9-6",
+	linkedin:
+		"M6.5 9.5v8M6.5 6.5v.01M10.5 17.5v-8M14 9.5c1.9 0 3.5 1.3 3.5 3.5v4.5M10.5 13.5c0-2.2 1.6-4 3.5-4M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z",
+	github:
+		"M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21",
+	instagram:
+		"M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Zm5 5.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm5.5-1v.01",
+};
+
+// The X logo is a filled glyph, drawn slightly smaller to match the stroked icons' weight.
+const X_LOGO =
+	"M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.25 6.93ZM17.61 20.64h2.04L6.49 3.24H4.3Z";
+---
+
+{
+	name === "x" ? (
+		<svg class={className} viewBox="-3 -3 30 30" fill="currentColor" aria-hidden="true">
+			<path d={X_LOGO} />
+		</svg>
+	) : (
+		<svg
+			class={className}
+			fill="none"
+			stroke="currentColor"
+			stroke-width="1.6"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			viewBox="0 0 24 24"
+			aria-hidden="true"
+		>
+			<path d={strokePaths[name]} />
+		</svg>
+	)
+}

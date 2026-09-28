@@ -1,0 +1,14 @@
+[
+	{
+		"title": "Backend and platforms",
+		"description": "Java, Kotlin and Spring services designed around the domain: hexagonal architecture, event streaming with Kafka, APIs that other teams can build on."
+	},
+	{
+		"title": "Cloud and delivery",
+		"description": "AWS, Docker and Kubernetes, with CI/CD pipelines and an operations mindset so what ships keeps running."
+	},
+	{
+		"title": "Leading engineers",
+		"description": "Managed teams of up to 12, from hiring and mentoring to roadmap and performance. I still write code, and I like it that way."
+	}
+]

@@ -1,66 +1,115 @@
 ---
+import { Image } from "astro:assets";
+import portrait from "../assets/images/photo2.png";
+import experiences from "../collections/experiences.json";
+import focus from "../collections/focus.json";
 import Button from "../components/button.astro";
 import Layout from "../layouts/main.astro";
+
+const RESUME_URL = "/OriolSubirana2026-SWE.pdf";
+const current = experiences[0];
 ---
 
 <Layout title="Oriol Subirana">
-  <div
-    class="relative z-20 w-full max-w-4xl mx-auto mt-32 px-7 md:mt-8 lg:mt-16 xl:px-0 flex flex-grow"
-  >
-    <div class="flex flex-col items-center md:flex-row">
-      <div class="relative w-full md:w-1/2">
+  <section class="relative overflow-hidden">
+    <div class="grid-backdrop pointer-events-none absolute inset-0 -z-10" aria-hidden="true"></div>
+
+    <div
+      class="mx-auto grid w-full max-w-5xl items-center gap-12 px-6 pb-16 pt-14 md:grid-cols-[1.15fr_1fr] md:pb-24 md:pt-20 lg:gap-16"
+    >
+      <div>
         <h1
-          class="mb-5 text-4xl font-bold leading-tight md:text-4xl lg:text-6xl dark:text-white"
+          class="text-5xl font-semibold leading-[1.02] tracking-[-0.03em] text-stone-900 dark:text-stone-50 sm:text-6xl lg:text-7xl"
         >
-          Hello, I'm Oriol.
+          Hello,<br />I'm Oriol.
         </h1>
-        <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400">
-          I'm a Software Engineer Lead based in Zürich, building scalable systems and leading high-performing teams.
+        <p class="mt-7 max-w-md text-lg leading-8 text-stone-600 dark:text-stone-400">
+          Software engineer lead in Zürich. For over ten years I've built
+          cloud platforms in Java and Kotlin and led the teams that run them.
         </p>
-        <p class="mb-2 font-semibold text-neutral-800 dark:text-neutral-200">
-          I can help you out with:
-        </p>
-        <ul
-          class="py-2 space-y-[3px] text-sm list-disc list-inside text-neutral-500 dark:text-neutral-400"
-        >
-          <li>Java & Kotlin Development</li>
-          <li>Cloud & Microservices Architecture</li>
-          <li>Engineering Leadership</li>
-          <li>DevOps & CI/CD</li>
-          <li>Web Application Development</li>
-        </ul>
-        <Button text="More in my resume" link="/OriolSubiranaCV2025.pdf" />
+        <div class="mt-9 flex flex-wrap items-center gap-3">
+          <Button text="Read my résumé" link={RESUME_URL} external />
+          <Button text="Get in touch" link="mailto:oriolsubiranaperdiguer@gmail.com" variant="secondary" />
+        </div>
       </div>
-      <div
-        class="relative justify-end hidden w-full mt-10 md:flex md:pl-10 md:w-1/2 md:mt-0 md:translate-y-4 xl:translate-y-0"
-      >
-        <div class="relative z-50 w-full">
-          <div
-            class="absolute bottom-0 z-40 w-16 h-16 -translate-x-6 -translate-y-1/2 lg:top-auto top-0 lg:-translate-y-[330px] rounded-full"
+
+      <div class="relative mx-auto w-full max-w-sm md:max-w-none">
+        <div
+          class="relative rounded-3xl border border-dashed border-stone-300 bg-gradient-to-b from-stone-100 to-stone-50 px-8 pt-8 dark:border-stone-700 dark:from-stone-900 dark:to-stone-950"
+        >
+          <Image
+            src={portrait}
+            alt="Oriol Subirana in cycling kit, standing beside his road bike"
+            widths={[360, 540, 720]}
+            sizes="(min-width: 768px) 28rem, 90vw"
+            loading="eager"
+            class="mx-auto block w-full max-w-xs md:max-w-sm"
+          />
+          <span
+            class="absolute -left-4 top-10 flex h-12 w-12 items-center justify-center rounded-full border border-dashed border-stone-300 bg-stone-50 text-xl shadow-sm dark:border-stone-700 dark:bg-stone-950"
+            aria-hidden="true"
           >
-            <span
-              class="relative z-20 flex items-center justify-center w-full h-full text-2xl border-8 border-white rounded-full dark:border-neutral-950 bg-neutral-100 dark:bg-neutral-900"
-            >
-              <span
-                class="flex items-center justify-center w-full h-full bg-white border border-dashed rounded-full dark:bg-neutral-950 border-neutral-300 dark:border-neutral-700"
-                >👋</span
-              >
-            </span>
-          </div>
-          <div class="relative z-30 px-10">
-            <img
-              src="/assets/images/photo2.png"
-              loading="eager"
-              decoding="auto"
-              class="relative z-30 w-full aspect-[790/1189] md:max-w-md mx-auto dark:-translate-y-0.5"
-            />
-          </div>
-          <div
-            class="absolute bottom-0 right-0 z-20 w-full h-full lg:h-[420px] translate-x-0 -translate-y-px border border-dashed rounded-2xl bg-gradient-to-r dark:from-neutral-950 dark:via-black dark:to-neutral-950 from-white via-neutral-50 to-white border-neutral-300 dark:border-neutral-700"
-          >
-          </div>
+            👋
+          </span>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <section
+    aria-labelledby="focus-heading"
+    class="border-t border-stone-200 dark:border-stone-800"
+  >
+    <div class="mx-auto w-full max-w-5xl px-6 py-16 md:py-20">
+      <h2
+        id="focus-heading"
+        class="text-2xl font-semibold tracking-tight text-stone-900 dark:text-stone-50"
+      >
+        What I do
+      </h2>
+      <div class="mt-10 grid gap-10 md:grid-cols-3 md:gap-8">
+        {
+          focus.map((item) => (
+            <div>
+              <h3 class="text-base font-semibold text-stone-900 dark:text-stone-100">
+                {item.title}
+              </h3>
+              <p class="mt-3 text-base leading-7 text-stone-600 dark:text-stone-400">
+                {item.description}
+              </p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section
+    aria-labelledby="now-heading"
+    class="border-t border-stone-200 dark:border-stone-800"
+  >
+    <div
+      class="mx-auto grid w-full max-w-5xl gap-8 px-6 py-16 md:grid-cols-[1fr_2fr] md:py-20"
+    >
+      <h2
+        id="now-heading"
+        class="text-2xl font-semibold tracking-tight text-stone-900 dark:text-stone-50"
+      >
+        Now
+      </h2>
+      <div class="max-w-prose">
+        <p class="text-lg leading-8 text-stone-700 dark:text-stone-300">
+          {current.role} at {current.company}, since {current.start}.
+        </p>
+        <p class="mt-4 text-base leading-7 text-stone-600 dark:text-stone-400">
+          {current.description}
+        </p>
+        <p class="mt-6">
+          <a href="/about" class="link-underline text-base font-medium text-stone-900 dark:text-stone-100">
+            The full story, and what I'm up to off the keyboard
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
 </Layout>

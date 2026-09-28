@@ -1,0 +1,32 @@
+[
+	{
+		"name": "Email",
+		"handle": "oriolsubiranaperdiguer@gmail.com",
+		"url": "mailto:oriolsubiranaperdiguer@gmail.com",
+		"icon": "mail"
+	},
+	{
+		"name": "LinkedIn",
+		"handle": "in/oriolsubirana",
+		"url": "https://www.linkedin.com/in/oriolsubirana/",
+		"icon": "linkedin"
+	},
+	{
+		"name": "GitHub",
+		"handle": "oriolsubirana",
+		"url": "https://github.com/oriolsubirana",
+		"icon": "github"
+	},
+	{
+		"name": "X",
+		"handle": "@subicat",
+		"url": "https://x.com/subicat",
+		"icon": "x"
+	},
+	{
+		"name": "Instagram",
+		"handle": "@uri.subi",
+		"url": "https://www.instagram.com/uri.subi/",
+		"icon": "instagram"
+	}
+]
