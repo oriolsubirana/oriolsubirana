@@ -93,11 +93,12 @@ Update the hardcoded conditional in `about.astro` (currently `loop == 0 || loop 
 The `about.astro` page imports `Separator` from `src/components/home/separator.astro` (line 6, used at line 68). Since `separator.astro` is being deleted:
 
 1. Remove the `Separator` import (line 6)
-2. Replace the **entire block** on lines 67-69 (the outer `<a>` wrapper + `<Separator>`) with a single `<Button text="More in my resume" link="/OriolSubiranaCV2025.pdf" />`. The `Button` component already renders its own `<a>` tag internally, so the outer wrapper must be removed to avoid invalid nested `<a>` tags.
+2. Replace the **entire block** on lines 67-69 (the outer `<a>` wrapper + `<Separator>`) with a single `<Button text="More in my resume" link="/OriolSubirana2026-SWE.pdf" />`. The `Button` component already renders its own `<a>` tag internally, so the outer wrapper must be removed to avoid invalid nested `<a>` tags.
 
 ### Company Logos
 
 New logo files needed in `public/assets/images/experiences/`:
+
 - `natwest.ico` — 32x32 minimum, .ico or .png format
 - `alemany.ico` — 32x32 minimum, .ico or .png format
 - `sii.ico` — 32x32 minimum, .ico or .png format

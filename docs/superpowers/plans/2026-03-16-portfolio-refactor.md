@@ -17,6 +17,7 @@
 ### Task 1: Update Home Page Hero and Skills
 
 **Files:**
+
 - Modify: `src/pages/index.astro`
 
 - [ ] **Step 1: Update hero text**
@@ -76,6 +77,7 @@ git commit -m "feat: update home page hero and skills to match CV 2025"
 ### Task 2: Update Experiences Data
 
 **Files:**
+
 - Modify: `src/collections/experiences.json`
 
 - [ ] **Step 1: Replace experiences.json with all 8 CV positions**
@@ -84,62 +86,62 @@ Overwrite `src/collections/experiences.json` with:
 
 ```json
 [
-	{
-		"dates": "April 2025 · Present",
-		"role": "Senior Software Engineer",
-		"company": "Natwest Group",
-		"description": "Led the design and development of a modular microservices-based API platform. Delivered scalable solutions on AWS using Docker and Kubernetes, integrating Kafka for streaming and applying DevOps best practices.",
-		"logo": "/assets/images/experiences/natwest.ico"
-	},
-	{
-		"dates": "September 2023 · February 2025",
-		"role": "Senior Software Engineer",
-		"company": "Beyond Beauty Club",
-		"description": "Led a team to develop and deploy a multi-level marketing mobile application growing to +20,000 users and 5 countries in six months. Implemented robust data management strategies including database optimisation and caching.",
-		"logo": "/assets/images/experiences/bbc.ico"
-	},
-	{
-		"dates": "January 2023 · September 2023",
-		"role": "Head of Engineering",
-		"company": "WOW Concept",
-		"description": "Ensured compliance with software development methodology and SDLC. Managed software development projects and designed strategies for future development based on company objectives.",
-		"logo": "/assets/images/experiences/wow.ico"
-	},
-	{
-		"dates": "August 2020 · January 2023",
-		"role": "Engineering Manager",
-		"company": "SEAT:CODE",
-		"description": "Coordinated the product roadmap between legacy and cloud-based products. Managed a team of 12 engineers responsible for mentorship, growth, and performance evaluation.",
-		"logo": "/assets/images/experiences/code.ico"
-	},
-	{
-		"dates": "May 2018 · August 2020",
-		"role": "Senior Software Engineer",
-		"company": "Roche Diagnostics",
-		"description": "Built solutions for Medical Diagnostics Software using Java, Spring Boot, Angular and React. Hexagonal Architecture with Domain-Driven Design structured in Microservices.",
-		"logo": "/assets/images/experiences/roche.ico"
-	},
-	{
-		"dates": "February 2016 · May 2018",
-		"role": "Senior Software Engineer",
-		"company": "Alemany Informatica",
-		"description": "Built technical solutions and completed projects to budgetary and quality requirements. Involved in requirements gathering, demonstrating software prototypes, and customer training.",
-		"logo": "/assets/images/experiences/alemany.ico"
-	},
-	{
-		"dates": "March 2015 · February 2016",
-		"role": "Software Engineer",
-		"company": "SII Concatel",
-		"description": "Developed web and Android applications using Javascript, JQuery, Spring Security, Spring MVC, and Hibernate inside the Scrum team.",
-		"logo": "/assets/images/experiences/sii.ico"
-	},
-	{
-		"dates": "February 2013 · March 2015",
-		"role": "System Analyst",
-		"company": "Accenture",
-		"description": "Worked with the financial risk team of Banc Sabadell. Developed with SQL Server, Oracle, C#, Java, Matlab and financial applications.",
-		"logo": "/assets/images/experiences/accenture.ico"
-	}
+ {
+  "dates": "April 2025 · Present",
+  "role": "Senior Software Engineer",
+  "company": "Natwest Group",
+  "description": "Led the design and development of a modular microservices-based API platform. Delivered scalable solutions on AWS using Docker and Kubernetes, integrating Kafka for streaming and applying DevOps best practices.",
+  "logo": "/assets/images/experiences/natwest.ico"
+ },
+ {
+  "dates": "September 2023 · February 2025",
+  "role": "Senior Software Engineer",
+  "company": "Beyond Beauty Club",
+  "description": "Led a team to develop and deploy a multi-level marketing mobile application growing to +20,000 users and 5 countries in six months. Implemented robust data management strategies including database optimisation and caching.",
+  "logo": "/assets/images/experiences/bbc.ico"
+ },
+ {
+  "dates": "January 2023 · September 2023",
+  "role": "Head of Engineering",
+  "company": "WOW Concept",
+  "description": "Ensured compliance with software development methodology and SDLC. Managed software development projects and designed strategies for future development based on company objectives.",
+  "logo": "/assets/images/experiences/wow.ico"
+ },
+ {
+  "dates": "August 2020 · January 2023",
+  "role": "Engineering Manager",
+  "company": "SEAT:CODE",
+  "description": "Coordinated the product roadmap between legacy and cloud-based products. Managed a team of 12 engineers responsible for mentorship, growth, and performance evaluation.",
+  "logo": "/assets/images/experiences/code.ico"
+ },
+ {
+  "dates": "May 2018 · August 2020",
+  "role": "Senior Software Engineer",
+  "company": "Roche Diagnostics",
+  "description": "Built solutions for Medical Diagnostics Software using Java, Spring Boot, Angular and React. Hexagonal Architecture with Domain-Driven Design structured in Microservices.",
+  "logo": "/assets/images/experiences/roche.ico"
+ },
+ {
+  "dates": "February 2016 · May 2018",
+  "role": "Senior Software Engineer",
+  "company": "Alemany Informatica",
+  "description": "Built technical solutions and completed projects to budgetary and quality requirements. Involved in requirements gathering, demonstrating software prototypes, and customer training.",
+  "logo": "/assets/images/experiences/alemany.ico"
+ },
+ {
+  "dates": "March 2015 · February 2016",
+  "role": "Software Engineer",
+  "company": "SII Concatel",
+  "description": "Developed web and Android applications using Javascript, JQuery, Spring Security, Spring MVC, and Hibernate inside the Scrum team.",
+  "logo": "/assets/images/experiences/sii.ico"
+ },
+ {
+  "dates": "February 2013 · March 2015",
+  "role": "System Analyst",
+  "company": "Accenture",
+  "description": "Worked with the financial risk team of Banc Sabadell. Developed with SQL Server, Oracle, C#, Java, Matlab and financial applications.",
+  "logo": "/assets/images/experiences/accenture.ico"
+ }
 ]
 ```
 
@@ -168,6 +170,7 @@ git commit -m "feat: update experiences data with all 8 CV positions and logos"
 ### Task 3: Update About Page
 
 **Files:**
+
 - Modify: `src/pages/about.astro`
 
 - [ ] **Step 1: Remove Separator import, add Button import**
@@ -175,11 +178,13 @@ git commit -m "feat: update experiences data with all 8 CV positions and logos"
 In `src/pages/about.astro`, replace line 6:
 
 Old:
+
 ```astro
 import Separator from "../components/home/separator.astro";
 ```
 
 New:
+
 ```astro
 import Button from "../components/button.astro";
 ```
@@ -189,11 +194,13 @@ import Button from "../components/button.astro";
 Replace the `description` prop in the `PageHeading` component (line 13):
 
 Old:
+
 ```
 description="Hello 👋 I'm Oriol Subirana, an Engineering Manager from Barcelona with over a decade of experience in designing and developing scalable technology solutions. My technical expertise centers around Java, Kotlin, and the Spring framework, with strong competencies in frontend development using React and Angular. I'm also deeply passionate about fostering a DevOps culture, with a focus on automation, CI/CD, containerization, and cloud technologies."
 ```
 
 New:
+
 ```
 description="Detail-oriented Software Engineer with a strategic and pragmatic approach to driving project success and ensuring client satisfaction. With over 10 years of experience in designing and developing large-scale cloud-based technology solutions, I bring a strong technical foundation combined with proven leadership in delivering impactful results."
 ```
@@ -203,11 +210,13 @@ description="Detail-oriented Software Engineer with a strategic and pragmatic ap
 Replace the experience container div (line 38) to add scroll classes:
 
 Old:
+
 ```astro
     <div class="px-5 py-10">
 ```
 
 New:
+
 ```astro
     <div class="px-5 py-10 max-h-[600px] overflow-y-auto">
 ```
@@ -215,6 +224,7 @@ New:
 Then replace the hardcoded loop conditional (lines 43-61):
 
 Old:
+
 ```astro
       {
         experiences.map((experience, loop) => {
@@ -246,6 +256,7 @@ Old:
 ```
 
 New:
+
 ```astro
       {
         experiences.map((experience, loop) => {
@@ -281,15 +292,17 @@ New:
 Replace the entire Separator block (lines 67-69):
 
 Old:
+
 ```astro
-    <a href="/OriolSubiranaCV2025.pdf">
-      <Separator text="More in my resume" link="/OriolSubiranaCV2025.pdf" />
+    <a href="/OriolSubirana2026-SWE.pdf">
+      <Separator text="More in my resume" link="/OriolSubirana2026-SWE.pdf" />
     </a>
 ```
 
 New:
+
 ```astro
-    <Button text="More in my resume" link="/OriolSubiranaCV2025.pdf" />
+    <Button text="More in my resume" link="/OriolSubirana2026-SWE.pdf" />
 ```
 
 - [ ] **Step 5: Verify About page renders**
@@ -311,6 +324,7 @@ git commit -m "feat: update about page with CV 2025 content, scroll container, a
 ### Task 4: Delete Dead Pages, Components, Layouts, and Content
 
 **Files:**
+
 - Delete: `src/pages/projects.astro`
 - Delete: `src/pages/posts.astro`
 - Delete: `src/pages/post/[slug].astro`
@@ -371,6 +385,7 @@ git commit -m "chore: remove dead code — blog, projects, unused components and
 ### Task 5: Remove Typography Plugin
 
 **Files:**
+
 - Modify: `tailwind.config.mjs`
 - Modify: `package.json`
 - Modify: `src/assets/css/main.css`
@@ -380,13 +395,15 @@ git commit -m "chore: remove dead code — blog, projects, unused components and
 In `tailwind.config.mjs`, replace line 8:
 
 Old:
+
 ```js
-	plugins: [require("@tailwindcss/typography")],
+ plugins: [require("@tailwindcss/typography")],
 ```
 
 New:
+
 ```js
-	plugins: [],
+ plugins: [],
 ```
 
 - [ ] **Step 2: Remove `.prose img` rule from main.css**
@@ -404,7 +421,7 @@ In `src/assets/css/main.css`, delete lines 7-9:
 In `package.json`, delete the `@tailwindcss/typography` line from `devDependencies`:
 
 ```json
-		"@tailwindcss/typography": "^0.5.13",
+  "@tailwindcss/typography": "^0.5.13",
 ```
 
 - [ ] **Step 4: Reinstall dependencies**
@@ -446,6 +463,7 @@ Expected: Clean build, no warnings about missing files or components.
 
 Open `http://localhost:3001/`
 Verify:
+
 - Hero says "Engineering Manager & Software Engineer living in Zürich"
 - Skills list has 5 items
 - No commented-out sections visible
@@ -455,6 +473,7 @@ Verify:
 
 Open `http://localhost:3001/about`
 Verify:
+
 - PageHeading has updated description
 - 8 experience entries render with correct dates, roles, companies, descriptions
 - Experience container scrolls vertically
