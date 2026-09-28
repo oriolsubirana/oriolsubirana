@@ -4,7 +4,7 @@
 		"end": "Present",
 		"role": "Senior Software Engineer",
 		"company": "NatWest Group",
-		"description": "Led the design and development of a modular microservices-based API platform. Delivered scalable solutions on AWS using Docker and Kubernetes, integrating Kafka for streaming and applying DevOps best practices.",
+		"description": "Designing cloud-native distributed systems for an enterprise internal AI platform in banking. Microservices and APIs in Java, Spring Boot, Kafka, PostgreSQL, Kubernetes and AWS, with event-driven patterns for resilient, high-throughput workloads.",
 		"logo": "/assets/images/experiences/natwest.jpg"
 	},
 	{

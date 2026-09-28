@@ -4,6 +4,10 @@
 		"description": "Java, Kotlin and Spring services designed around the domain: hexagonal architecture, event streaming with Kafka, APIs that other teams can build on."
 	},
 	{
+		"title": "AI in production",
+		"description": "The platform side of generative AI: RAG pipelines, LLM integrations behind event-driven services, and the guardrails a bank needs before it goes live."
+	},
+	{
 		"title": "Cloud and delivery",
 		"description": "AWS, Docker and Kubernetes, with CI/CD pipelines and an operations mindset so what ships keeps running."
 	},

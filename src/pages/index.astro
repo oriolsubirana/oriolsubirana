@@ -26,6 +26,7 @@ const current = experiences[0];
         <p class="mt-7 max-w-md text-lg leading-8 text-stone-600 dark:text-stone-400">
           Software engineer lead in Zürich. For over ten years I've built
           cloud platforms in Java and Kotlin and led the teams that run them.
+          Lately, the backends behind enterprise AI.
         </p>
         <div class="mt-9 flex flex-wrap items-center gap-3">
           <Button text="Read my résumé" link={RESUME_URL} external />
@@ -67,7 +68,7 @@ const current = experiences[0];
       >
         What I do
       </h2>
-      <div class="mt-10 grid gap-10 md:grid-cols-3 md:gap-8">
+      <div class="mt-10 grid gap-10 sm:grid-cols-2 md:gap-8 lg:grid-cols-4">
         {
           focus.map((item) => (
             <div>
